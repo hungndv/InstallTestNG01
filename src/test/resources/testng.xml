@@ -1,11 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="All Suites" verbose="1">
-  <test name="All suites test">
-    <parameter name="planId" value="0"></parameter>
-    <parameter name="suiteId" value="0"></parameter>
-    <packages>
-      <package name="test.java" />
-    </packages>
-  </test>
+  <parameter name="planId" value="0"></parameter>
+  <parameter name="suiteId" value="0"></parameter>
+  <packages>
+    <package name="test.java" />
+  </packages>
 </suite>

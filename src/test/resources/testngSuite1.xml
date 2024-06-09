@@ -1,9 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Suite 1" verbose="1">
+  <parameter name="planId" value="0"></parameter>
+  <parameter name="suiteId" value="0"></parameter>
   <test name="Suite 1">
     <classes>
-       <class name="test.java.SimpleTest"/>
+       <class name="test.java.Suite1Test"/>
     </classes>
   </test>
 </suite>

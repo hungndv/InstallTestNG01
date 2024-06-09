@@ -19,9 +19,13 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.5</version>
         <configuration>
+        <forkCount>2</forkCount>
+        <reuseForks>false</reuseForks>
+        <reportsDirectory>target/surefire-reports-${surefire.forkNumber}</reportsDirectory>
           <suiteXmlFiles>
-            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-<!--			<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
+<!--            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>-->
+			<suiteXmlFile>src/test/resources/testngSuite1.xml</suiteXmlFile>
+			<suiteXmlFile>src/test/resources/testngSuite2.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -46,6 +50,12 @@
       <artifactId>testng</artifactId>
       <version>7.10.1</version>
       <scope>compile</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
+    <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>7.0.0</version>
     </dependency>
   </dependencies>
 </project>
