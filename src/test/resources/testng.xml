@@ -3,7 +3,9 @@
 <suite name="All Suites" verbose="1">
   <parameter name="planId" value="0"></parameter>
   <parameter name="suiteId" value="0"></parameter>
-  <packages>
-    <package name="test.java" />
-  </packages>
+  <test name="Suite 1" parallel="methods">
+    <packages>
+      <package name="test.java" />
+    </packages>
+  </test>
 </suite>
