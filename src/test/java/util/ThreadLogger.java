@@ -1,8 +1,8 @@
-package test.java;
+package test.java.util;
 
-import org.testng.annotations.Guice;
-
-@Guice(modules = TestModule.class)
+/**
+ * 
+ */
 public class ThreadLogger {
 	private static final ThreadLocal<AppLogger> tlogger = new ThreadLocal<AppLogger>();
 	

@@ -1,9 +1,16 @@
 package test.java.pages;
 
-import test.java.ThreadLogger;
+import org.openqa.selenium.WebDriver;
+
+import test.java.util.AppLogger;
 
 public class LoginPage extends BasePage{
+	public LoginPage(WebDriver driver, AppLogger logger) {
+		super(driver, logger);
+		// TODO Auto-generated constructor stub
+	}
+
 	public void login() {
-		ThreadLogger.getLogger().log("Do login");
+		log("Do login");
 	}
 }

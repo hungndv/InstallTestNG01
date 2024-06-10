@@ -1,9 +1,11 @@
-package test.java;
+package test.java.util;
 
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 import org.testng.SkipException;
+
+import test.java.BaseTest;
 
 public class SimpleInvokedMethodListener implements IInvokedMethodListener {
 	@Override

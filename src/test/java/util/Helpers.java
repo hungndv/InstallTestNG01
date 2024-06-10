@@ -1,6 +1,6 @@
-package test.java;
+package test.java.util;
 
-public class Utils {
+public class Helpers {
 	public static void sleep(int seconds) {
 		try {
 			Thread.sleep(seconds * 1000);
